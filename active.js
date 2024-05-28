@@ -2,7 +2,7 @@
     const fname = document.getElementById("fname")
     const lname = document.getElementById("lname")
     const email = document.getElementById("email")
-    const pword = document.getElementById("pword")
+    const password = document.getElementById("password")
     const submit = document.getElementById("submit")
 
 
@@ -17,42 +17,47 @@
       const fName = fname.value;
       const lName = lname.value;
       const eVal = email.value;
-      const pVal = pword.value;
-      const meSg1 = ferr.value;
-      const meSg2 = lerr.value;
-      const meSg3 = eerr.value;
-      const meSg4 = perr.value;
+      const pVal = password.value;
+
 
       if (fName === '') {
         fname.classList.add('error');
         ferr.classList.remove('f-er');
+        errf.classList.remove('icon');
       } else {
         fname.classList.remove('error');
         ferr.classList.add('f-er');
+        errf.classList.add('icon');
       }
 
       if (lName === '') {
         lname.classList.add('error');
         lerr.classList.remove('l-er');
+        errl.classList.remove('icon');
       } else {
         lname.classList.remove('error');
         lerr.classList.add('l-er');
+        errl.classList.remove('icon');
       }
 
       if (eVal === '') {
         email.classList.add('error');
         eerr.classList.remove('e-er');
+        erre.classList.remove('icon');
       } else {
         email.classList.remove('error');
         eerr.classList.add('e-er');
+        erre.classList.remove('icon');
       }
 
       if (pVal === '') {
-        pword.classList.add('error');
+        password.classList.add('error');
         perr.classList.remove('p-er');
+        errp.classList.remove('icon');
       } else {
-        pword.classList.remove('error');
+        password.classList.remove('error');
         perr.classList.add('p-er');
+        errp.classList.remove('icon');
       }
 
     });

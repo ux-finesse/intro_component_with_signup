@@ -84,6 +84,7 @@ form{
 .forx{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 input{
@@ -98,6 +99,14 @@ input{
     outline: none;
 }
 
+#errf, #errl, #erre, #errp{
+    position: absolute;
+    right: 14px;
+    top: 16px;
+    width: 20px;
+}
+
+
 input.error {
     border: 0.094rem solid hsl(0, 100%, 74%);
 }
@@ -109,7 +118,7 @@ input.error {
     font-style: italic;
 }
 
-.f-er, .l-er, .e-er, .p-er{
+.f-er, .l-er, .e-er, .p-er, .icon{
     display: none;
 }
 
