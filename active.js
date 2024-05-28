@@ -37,7 +37,7 @@
       } else {
         lname.classList.remove('error');
         lerr.classList.add('l-er');
-        errl.classList.remove('icon');
+        errl.classList.add('icon');
       }
 
       if (eVal === '') {
@@ -47,7 +47,7 @@
       } else {
         email.classList.remove('error');
         eerr.classList.add('e-er');
-        erre.classList.remove('icon');
+        erre.classList.add('icon');
       }
 
       if (pVal === '') {
@@ -57,7 +57,7 @@
       } else {
         password.classList.remove('error');
         perr.classList.add('p-er');
-        errp.classList.remove('icon');
+        errp.classList.add('icon');
       }
 
     });
