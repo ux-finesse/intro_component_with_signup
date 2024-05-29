@@ -11,7 +11,7 @@ body{
 }
 
 main{
-    margin: 9rem 10rem 0
+    margin: 6.5rem 10rem 0
 }
 
 .cont{
@@ -101,9 +101,18 @@ input{
 
 #errf, #errl, #erre, #errp{
     position: absolute;
-    right: 14px;
-    top: 16px;
-    width: 20px;
+    right: 1.5rem;
+    top: 1rem;
+    width: 1.25rem;
+    z-index: +1;
+}
+
+#eye, #eyeslash, .bi{
+    position: absolute;
+    right: 1.59rem;
+    top: .89rem;
+    z-index: 0;
+    width: 1.25rem;
 }
 
 
