@@ -7,10 +7,10 @@
 
 
     function validateEmail(email) {
-      var re =
+      const re =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(String(email).toLowerCase());
-    }
+    };
     
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -62,16 +62,16 @@
 
     });
 
-  const togglePassword = document.querySelector("#togglePassword");
-  const eyePassword = document.querySelector("#password");
+    const togglePassword = document.querySelector("#togglePassword");
+    const eyePassword = document.querySelector("#password");
 
-  togglePassword.addEventListener("click", function () {
-    
-    const type = password.getAttribute("type") === "password" ? "text" : "password";
-    password.setAttribute("type", type);
-            
-    this.classList.toggle("bi-eye");
-  });
+    togglePassword.addEventListener("click", function () {
+      
+      const type = password.getAttribute("type") === "password" ? "text" : "password";
+      password.setAttribute("type", type);
+              
+      this.classList.toggle("bi-eye");
+    });
 
 
 
